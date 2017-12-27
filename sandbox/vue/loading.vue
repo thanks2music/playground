@@ -1,14 +1,11 @@
 <template>
-  <p>
-    {{ greeting }} World!
-  </p>  
+  <div></div>  
 </template>
 
 <script>
   module.exports = {
     data: function() {
       return {
-        greeting: 'Hello',
       }
     }
   }
@@ -18,6 +15,5 @@
   p {
     font-size: 2em;
     text-align: center;
-    color: red;
   }
 </style>
