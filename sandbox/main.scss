@@ -14,3 +14,11 @@ body {
   width: 100vw;
   position: relative;
 }
+
+// for loading.vue
+// .vueに書いたstyleから背景読み込みがscssでもstylusでも出来なかった
+.bus {
+  &--large {
+    background-image: url('assets/images/bus/large.png');
+  }
+}

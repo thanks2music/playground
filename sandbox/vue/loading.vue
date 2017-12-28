@@ -1,10 +1,11 @@
-<template>
-  <div class="bus">
-    <div ref="caravan" class="bus--large"></div>
-  </div>
+<template lang="pug">
+  .bus
+    .bus--large(ref='caravan')
 </template>
 
 <script>
+  require('../assets/img/bus/large.png');
+
   module.exports = {
     data: function() {
       return {
@@ -13,27 +14,21 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  .bus {
-    width: 50vw;
-    height: 50vh;
-    position: relative;
-    background: #222;
+<style lang="stylus" scoped>
+  .bus
+    width 50vw
+    height 50vh
+    position relative
 
-    &--large {
-      $size: 148px, 122px;
-      width: nth($size, 1) / 2;
-      height: nth($size, 2) / 2;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      background: {
-        image: url('../../images/bus/large.png');
-        position: 0 0;
-        repeat: no-repeat;
-        size: contain;
-      }
-    }
-  }
+    // .vueに書いたstyleから背景読み込みが出来なかった
+    &--large
+      width 74px
+      height 61px
+      position absolute
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+      background-position 0 0
+      background-repeat no-repeat
+      background-size contain
 </style>
