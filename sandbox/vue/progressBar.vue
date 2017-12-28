@@ -37,6 +37,10 @@
 
 <style lang="scss" scoped>
   .progress {
+    width: 100%;
+    padding: 5vh 0;
+    line-height: 1;
+
     &--count {
       font-size: 3rem;
       padding: 1rem;
@@ -46,9 +50,9 @@
     }
 
     &--bar {
-      padding: .5rem;
+      padding: 10px;
       margin: .5rem;
-      border: 2px solid #fff;
+      background: #fff;
       border-radius: 10px;
       position: relative;
       overflow: hidden;
