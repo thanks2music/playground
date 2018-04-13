@@ -6,7 +6,7 @@
   module.exports = {
     data: function() {
       return {
-        playground: 'thanks2musics playground',
+        playground: "thanks2music's playground",
       }
     }
   }
@@ -14,8 +14,8 @@
 
 <style scoped>
   h1 {
-    font-size: 2em;
-    text-align: center;
-    color: #2e9afe;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
   }
 </style>

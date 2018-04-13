@@ -6,8 +6,7 @@
   "directories": {
     "doc": "docs"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thanks2music/playground.git"
@@ -24,10 +23,12 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-vue": "^2.0.2",
     "parcel-bundler": "^1.7.0",
+    "stylus": "^0.54.5",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"
   },
   "dependencies": {
+    "css": "^2.2.1",
     "vue-hot-reload-api": "^2.3.0"
   }
 }
