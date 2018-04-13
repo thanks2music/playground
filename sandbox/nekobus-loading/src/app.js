@@ -2,8 +2,9 @@
 import Vue from 'vue/dist/vue.esm.js';
 import Loading from './vue/loading.vue';
 import ProgressBar from './vue/progressBar.vue';
-// Styles
-import './main.scss';
+// Style
+import './assets/stylesheets/app.styl';
+
 const app = new Vue({
   el: '#app',
   components: {

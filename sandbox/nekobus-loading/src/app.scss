@@ -1,0 +1,40 @@
+body {
+  color: #fff;
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+// for loading.vue
+// .vueに書いたstyleから背景読み込みがscssでもstylusでも出来なかった
+.bus {
+  &--large {
+    background-image: url('assets/images/bus/large.png');
+  }
+}
+
+// for loading.vue (.vueに書いたstyleから背景読み込みがscssでもstylusでも出来なかった)
+.bus {
+  $busImages = large, kids1, kids2, girl, man, dog, cat
+
+  @each $img in $busImages {
+    &--{$img} {
+      $filePath = '../images/bus/' + $img + '.png'
+      $width = image-size($filePath)[0] / 2
+      $height = image-size($filePath)[1] / 2
+      width: $width
+      height: $height
+      // background-image url($filePath)
+    }
+  }
+}

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  const TweenMax = require('gsap/TweenMax.js');
+  require('gsap/TweenMax.js');
   export default {
     data: function() {
       return {
@@ -19,6 +19,7 @@
     computed: {
     },
     mounted: function() {
+
       const isAnimationTo100 = {
         elem: this.$refs.count,
         percent: 0,
