@@ -1,9 +1,17 @@
 import Image from "next/image";
+import { Rowdies } from "next/font/google";
 import styles from "./page.module.sass";
+
+const RowdiesFont = Rowdies({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <h1 className={RowdiesFont.className}>Yoshiyuki Ito&apos;s Asobiba</h1>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
