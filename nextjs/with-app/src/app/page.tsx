@@ -1,16 +1,39 @@
+// 画像を使う場合
 import Image from "next/image";
-import { Rowdies } from "next/font/google";
-import styles from "./page.module.sass";
 
-const RowdiesFont = Rowdies({
-  weight: "400",
-  subsets: ["latin"],
-});
+// リンクを使う場合
+import Link from "next/link";
+
+// Components
+import Header from "../app/components/layouts/header";
+
+// Sass
+import styles from "../app/styles/layouts/home.module.sass";
+// External Style
+// import { Rowdies } from "next/font/google";
+// Google Font settings
+// const RowdiesFont = Rowdies({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1 className={RowdiesFont.className}>Yoshiyuki Ito&apos;s Playground</h1>
+    <div className={styles.playground__container}>
+      <Header />
+      <main className={styles.playground__main}>
+        <div className={styles.playground__menus}>
+          <aside className={styles.playground__menus__sidebar}>
+            Yoshiyuki Ito
+          </aside>
+        </div>
+
+        <div className={styles.playground__contents}>
+          <h1 className={styles.playground__contents__catchcopy}>
+            Yoshiyuki Ito&apos;s Playground
+          </h1>
+        </div>
+      </main>
 
       {/* <div className={styles.description}>
         <p>
@@ -98,6 +121,6 @@ export default function Home() {
           </p>
         </a>
       </div> */}
-    </main>
+    </div>
   );
 }

@@ -1,0 +1,23 @@
+$sidebar_width: 320px
+
+.playground
+  &__container
+    display: block
+    min-height: 100vh
+    // flex-direction: column
+    // justify-content: center
+    // align-items: center
+    // padding: 6rem
+
+  &__main
+    display: flex
+
+  &__menus
+    width: $sidebar_width
+
+    &__sidebar
+      background: #f4f4f4
+      min-height: 100%
+
+  &__contents
+    width: calc(100% - $sidebar_width)
